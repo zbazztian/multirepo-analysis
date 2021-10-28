@@ -41,6 +41,7 @@ jobs:
         queries: security-and-quality
 
     - run: |
+       ls
        ./build.sh
 
     - name: Perform CodeQL Analysis
