@@ -4,7 +4,6 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ main ]
 
 jobs:
@@ -25,13 +24,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        repository: https://github.com/zbazztian/acio
+        repository: zbazztian/acio
         path: acio
 
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        repository: https://github.com/zbazztian/cognl
+        repository: zbazztian/cognl
         path: cognl
 
     # Initializes the CodeQL tools for scanning.
